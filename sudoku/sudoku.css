@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+hr{
+    width: 500px;
+}
+#errors{
+    color: red;
+}
+#board{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    width: 47px;
+    height: 47px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#digits{
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.number{
+    width: 43px;
+    height: 43px;
+    margin: 2px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-selected{
+    background-color: gray;
+}
+.tile-start{
+    background-color: whitesmoke;
+}
+.hr-line{
+    border-bottom: 1px solid black;
+}
+.vr-line{
+    border-right: 1px solid black;
+}
+.reset-btn{
+    width: 450px;
+    height: 50px;
+    font-size: 17px;
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: gray;
+    border-radius: 5px;
+}

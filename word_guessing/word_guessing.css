@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1bb295;
+}
+.wrapper{
+    width: 430px;
+    background: #fff;
+    border-radius: 10px;
+}
+.wrapper h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper .content{
+    margin: 25px 25px 35px;
+}
+.content .typing-input{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+.content .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputs input{
+    height: 57px;
+    width: 56px;
+    margin: 4px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1bb295;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+}
+.inputs input:first-child{
+    margin-left: 0px;
+
+}
+.content .details{
+    margin: 20px 0 25px;
+}
+.details p{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.content .reset-btn{
+    width: 100%;
+    font-size: 17px;
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #1bb295;
+    border-radius: 5px;
+}
+/* Add this to your CSS file */
+.message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.message {
+    background-color: rgba(255, 0, 0, 0.8); /* Red color */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 40px; /* Larger font size */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#congratulationsMessage {
+    background-color: rgba(0, 128, 0, 0.8); /* Green color */
+}
+
+.show-message {
+    opacity: 1;
+    pointer-events: auto;
+}
